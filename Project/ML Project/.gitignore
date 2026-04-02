@@ -1,0 +1,73 @@
+# ============================================================
+# .gitignore — Multimodal Fake Product Hype Detection
+# ============================================================
+
+# ── Environments ────────────────────────────────────────────
+hype_env/
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ── Data (large files — use DVC or external storage) ────────
+data/raw/*.csv
+data/raw/*.json
+data/raw/*.parquet
+data/raw/*.gz
+data/processed/
+data/features/
+data/interim/
+
+# ── Models ──────────────────────────────────────────────────
+models/saved/
+models/checkpoints/
+models/hf_cache/
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# ── Logs ────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── IDE / OS ─────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── Jupyter ──────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Secrets ──────────────────────────────────────────────────
+.env
+*.pem
+*.key
+.env.example
+
+# ── Build / Dist ─────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# ── Test Cache ───────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Reports (generated; exclude images) ─────────────────────
+reports/figures/*.png
+reports/figures/*.html
+reports/tables/*.csv
+
+# Keep directory placeholders
+!**/.gitkeep
